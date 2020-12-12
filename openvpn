@@ -1,0 +1,11 @@
+#!/bin/sh
+apt-get update -y
+apt-get upgrade -y
+apt-get install openvpn wget zip unzip -y
+wget http://www.privateinternetaccess.com/openvpn/openvpn.zip
+wget http://www.privateinternetaccess.com/openvpn/openvpn-ip.zip
+mkdir vpn vpn/ovpns vpn/ovpns-ip
+mv openvpn.zip vpn/ovpns
+mv openvpn-ip.zip vpn/ovpns-ip
+cd vpn/ovpns && unzip *.zip
+cd vpn/ovpns-ip && unzip *.zip
