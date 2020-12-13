@@ -9,3 +9,5 @@ mv openvpn.zip vpn/ovpns
 mv openvpn-ip.zip vpn/ovpns-ip
 cd vpn/ovpns && unzip *.zip
 cd vpn/ovpns-ip && unzip *.zip
+echo USER >> vpn/vpn.log
+echo PASS >> vpn/vpn.log
