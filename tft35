@@ -1,0 +1,9 @@
+apt-get update -y
+apt-get install git -y
+git clone https://github.com/goodtft/LCD-show.git
+cd LCD-show
+cp ./usr/tft35a-overlay.dtb /boot/overlays/tft35a.dtbo
+cp ./boot/config-35.txt /boot/config.txt
+cp ./usr/cmdline.txt /boot/
+reboot
+
